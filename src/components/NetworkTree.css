@@ -1,0 +1,96 @@
+ /* Network tree container */
+.network-tree {
+    height: 600px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    position: relative; /* Ensure the tree has its own layer for easy manipulation */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for animations */
+}
+
+/* Search input styles */
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Search button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Modal for displaying node details */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #808080;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure modal stays on top */
+    width: 300px;
+    text-align: center;
+}
+
+.modal h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.modal p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.modal button {
+    margin-top: 10px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #1a5ac7;
+}
+
+/* Add Node and Delete Node Buttons */
+#manipulationBar {
+    margin: 15px 0;
+}
+
+#manipulationBar button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#manipulationBar button:hover {
+    background-color: #0056b3;
+}
